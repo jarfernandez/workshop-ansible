@@ -11,9 +11,10 @@ Vagrant.configure(2) do |config|
     end
     
     config.vm.provision "ansible" do |ansible|
-        ansible.playbook = "install-jenkins.yml"
+        ansible.playbook = "provision/install.yml"
         ansible.host_key_checking = false
         ansible.sudo = true
+        ansible.tags = ['common', 'jenkins']
     end
     
     config.vm.network "forwarded_port", host: 8080, guest:80, autocorrect: true
