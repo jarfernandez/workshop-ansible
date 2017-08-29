@@ -5,4 +5,4 @@ La instalación se hace primero de forma local en una máquina virtual VirtualBo
 
 ---
 
-Tags: amazon, ansible, aws, devops, git, github, jenkins, sourcetree, ubuntu, vagrant, virtualbox, configuration management
+Tags: amazon, ansible, aws, configuration management, devops, git, github, jenkins, sourcetree, ubuntu, vagrant, virtualbox
