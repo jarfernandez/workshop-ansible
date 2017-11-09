@@ -17,6 +17,6 @@ Vagrant.configure(2) do |config|
         ansible.tags = ['common', 'jenkins']
     end
     
-    config.vm.network "forwarded_port", host: 8080, guest:80, autocorrect: true
-    config.vm.network "forwarded_port", host: 8081, guest:8080, autocorrect: true
+    config.vm.network "forwarded_port", host: 8080, guest: 80, autocorrect: true
+    config.vm.network "forwarded_port", host: 8081, guest: 8080, autocorrect: true
 end
